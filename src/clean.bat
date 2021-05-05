@@ -1,0 +1,1 @@
+del /s *.pbd,*.pbd.browse,*.pbd.tmp,*.pbi,*.pbi.cout,*.sdf,*.sfr,*.o,*.map,*.out,*.log,*.tlog,*.lastbuildstate,*.unsuccessfulbuild,*.pdb,*.htm,*.obj,*.idb,*.pch,*.ipch,*.ilk,*.ncb,*.sim,*.lst

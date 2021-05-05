@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="startup_stm32f10x_md.s" />
+    <None Include="src.ewd" />
+    <None Include="src.ewp" />
+    <None Include="src.eww" />
+    <None Include="src.icf" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.c" />
+    <ClCompile Include="stm32f10x_it.c" />
+    <ClCompile Include="system_stm32f10x.c" />
+    <ClCompile Include="lib\src\misc.c" />
+    <ClCompile Include="lib\src\stm32f10x_exti.c" />
+    <ClCompile Include="lib\src\stm32f10x_gpio.c" />
+    <ClCompile Include="lib\src\stm32f10x_rcc.c" />
+    <ClCompile Include="lib\src\stm32f10x_tim.c" />
+    <ClCompile Include="lib\src\stm32f10x_usart.c" />
+    <ClCompile Include="core_cm3.c" />
+    <ClCompile Include="rfid.c" />
+    <ClCompile Include="led.c" />
+    <ClCompile Include="buzz.c" />
+    <ClCompile Include="tick.c" />
+    <ClCompile Include="lib\src\stm32f10x_rtc.c" />
+    <ClCompile Include="rtc.c" />
+    <ClCompile Include="lib\src\stm32f10x_bkp.c" />
+    <ClCompile Include="lib\src\stm32f10x_pwr.c" />
+    <ClCompile Include="wdg.c" />
+    <ClCompile Include="lib\src\stm32f10x_wwdg.c" />
+    <ClCompile Include="pwm.c" />
+    <ClCompile Include="uart.c" />
+    <ClCompile Include="com.c" />
+    <ClCompile Include="database.c" />
+    <ClCompile Include="proc.c" />
+    <ClCompile Include="flash.c" />
+    <ClCompile Include="lib\src\stm32f10x_flash.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="platform_config.h" />
+    <ClInclude Include="stm32f10x.h" />
+    <ClInclude Include="stm32f10x_it.h" />
+    <ClInclude Include="system_stm32f10x.h" />
+    <ClInclude Include="typedef.h" />
+    <ClInclude Include="lib\inc\misc.h" />
+    <ClInclude Include="lib\inc\stm32f10x_adc.h" />
+    <ClInclude Include="lib\inc\stm32f10x_bkp.h" />
+    <ClInclude Include="lib\inc\stm32f10x_can.h" />
+    <ClInclude Include="lib\inc\stm32f10x_cec.h" />
+    <ClInclude Include="lib\inc\stm32f10x_conf.h" />
+    <ClInclude Include="lib\inc\stm32f10x_crc.h" />
+    <ClInclude Include="lib\inc\stm32f10x_dac.h" />
+    <ClInclude Include="lib\inc\stm32f10x_dbgmcu.h" />
+    <ClInclude Include="lib\inc\stm32f10x_dma.h" />
+    <ClInclude Include="lib\inc\stm32f10x_exti.h" />
+    <ClInclude Include="lib\inc\stm32f10x_flash.h" />
+    <ClInclude Include="lib\inc\stm32f10x_fsmc.h" />
+    <ClInclude Include="lib\inc\stm32f10x_gpio.h" />
+    <ClInclude Include="lib\inc\stm32f10x_i2c.h" />
+    <ClInclude Include="lib\inc\stm32f10x_iwdg.h" />
+    <ClInclude Include="lib\inc\stm32f10x_pwr.h" />
+    <ClInclude Include="lib\inc\stm32f10x_rcc.h" />
+    <ClInclude Include="lib\inc\stm32f10x_rtc.h" />
+    <ClInclude Include="lib\inc\stm32f10x_sdio.h" />
+    <ClInclude Include="lib\inc\stm32f10x_spi.h" />
+    <ClInclude Include="lib\inc\stm32f10x_tim.h" />
+    <ClInclude Include="lib\inc\stm32f10x_usart.h" />
+    <ClInclude Include="lib\inc\stm32f10x_wwdg.h" />
+    <ClInclude Include="main.h" />
+    <ClInclude Include="core_cm3.h" />
+    <ClInclude Include="rfid.h" />
+    <ClInclude Include="led.h" />
+    <ClInclude Include="buzz.h" />
+    <ClInclude Include="tick.h" />
+    <ClInclude Include="rtc.h" />
+    <ClInclude Include="wdg.h" />
+    <ClInclude Include="pwm.h" />
+    <ClInclude Include="uart.h" />
+    <ClInclude Include="com.h" />
+    <ClInclude Include="errno.h" />
+    <ClInclude Include="database.h" />
+    <ClInclude Include="proc.h" />
+    <ClInclude Include="flash.h" />
+  </ItemGroup>
+</Project>
