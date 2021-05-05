@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src.ewd" />
+    <None Include="src.ewp" />
+    <None Include="src.eww" />
+    <None Include="src.icf" />
+    <None Include="startup_stm32f10x_md.s" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="buzz.c" />
+    <ClCompile Include="com.c" />
+    <ClCompile Include="core_cm3.c" />
+    <ClCompile Include="database.c" />
+    <ClCompile Include="flash.c" />
+    <ClCompile Include="led.c" />
+    <ClCompile Include="lib\src\misc.c" />
+    <ClCompile Include="lib\src\stm32f10x_bkp.c" />
+    <ClCompile Include="lib\src\stm32f10x_exti.c" />
+    <ClCompile Include="lib\src\stm32f10x_flash.c" />
+    <ClCompile Include="lib\src\stm32f10x_gpio.c" />
+    <ClCompile Include="lib\src\stm32f10x_pwr.c" />
+    <ClCompile Include="lib\src\stm32f10x_rcc.c" />
+    <ClCompile Include="lib\src\stm32f10x_rtc.c" />
+    <ClCompile Include="lib\src\stm32f10x_tim.c" />
+    <ClCompile Include="lib\src\stm32f10x_usart.c" />
+    <ClCompile Include="lib\src\stm32f10x_wwdg.c" />
+    <ClCompile Include="main.c" />
+    <ClCompile Include="proc.c" />
+    <ClCompile Include="pwm.c" />
+    <ClCompile Include="rfid.c" />
+    <ClCompile Include="rtc.c" />
+    <ClCompile Include="stm32f10x_it.c" />
+    <ClCompile Include="system_stm32f10x.c" />
+    <ClCompile Include="tick.c" />
+    <ClCompile Include="uart.c" />
+    <ClCompile Include="wdg.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="buzz.h" />
+    <ClInclude Include="com.h" />
+    <ClInclude Include="core_cm3.h" />
+    <ClInclude Include="database.h" />
+    <ClInclude Include="errno.h" />
+    <ClInclude Include="flash.h" />
+    <ClInclude Include="led.h" />
+    <ClInclude Include="main.h" />
+    <ClInclude Include="lib\inc\misc.h" />
+    <ClInclude Include="lib\inc\stm32f10x_adc.h" />
+    <ClInclude Include="lib\inc\stm32f10x_bkp.h" />
+    <ClInclude Include="lib\inc\stm32f10x_can.h" />
+    <ClInclude Include="lib\inc\stm32f10x_cec.h" />
+    <ClInclude Include="lib\inc\stm32f10x_conf.h" />
+    <ClInclude Include="lib\inc\stm32f10x_crc.h" />
+    <ClInclude Include="lib\inc\stm32f10x_dac.h" />
+    <ClInclude Include="lib\inc\stm32f10x_dbgmcu.h" />
+    <ClInclude Include="lib\inc\stm32f10x_dma.h" />
+    <ClInclude Include="lib\inc\stm32f10x_exti.h" />
+    <ClInclude Include="lib\inc\stm32f10x_flash.h" />
+    <ClInclude Include="lib\inc\stm32f10x_fsmc.h" />
+    <ClInclude Include="lib\inc\stm32f10x_gpio.h" />
+    <ClInclude Include="lib\inc\stm32f10x_i2c.h" />
+    <ClInclude Include="lib\inc\stm32f10x_iwdg.h" />
+    <ClInclude Include="lib\inc\stm32f10x_pwr.h" />
+    <ClInclude Include="lib\inc\stm32f10x_rcc.h" />
+    <ClInclude Include="lib\inc\stm32f10x_rtc.h" />
+    <ClInclude Include="lib\inc\stm32f10x_sdio.h" />
+    <ClInclude Include="lib\inc\stm32f10x_spi.h" />
+    <ClInclude Include="lib\inc\stm32f10x_tim.h" />
+    <ClInclude Include="lib\inc\stm32f10x_usart.h" />
+    <ClInclude Include="lib\inc\stm32f10x_wwdg.h" />
+    <ClInclude Include="platform_config.h" />
+    <ClInclude Include="proc.h" />
+    <ClInclude Include="pwm.h" />
+    <ClInclude Include="rfid.h" />
+    <ClInclude Include="rtc.h" />
+    <ClInclude Include="stm32f10x.h" />
+    <ClInclude Include="stm32f10x_it.h" />
+    <ClInclude Include="system_stm32f10x.h" />
+    <ClInclude Include="tick.h" />
+    <ClInclude Include="typedef.h" />
+    <ClInclude Include="uart.h" />
+    <ClInclude Include="wdg.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FCC6974D-0310-4F03-8B95-F02190E703A5}</ProjectGuid>
+    <RootNamespace>Test</RootNamespace>
+    <ProjectName>src</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(ProjectDir)lib\inc;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(ProjectDir)lib\inc;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
